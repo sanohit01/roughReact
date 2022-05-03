@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'; //imr > so that we can use bable
+import ReactDOM from 'react-dom';  //imrd
+import './indexx.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const myname = "Sanohit Jessica"
+const jage=21;
+const sage=20;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<React.Fragment> 
+    <h1>This is headings</h1>
+    <p>This is para</p>
+    <p className='para'>My name is {myname}</p>
+    <p style = {{color: 'red', backgroundColor: 'pink', width: '200px'}}>{`Sanohit age is ${sage} and Jessica age is ${jage}`}</p>
+    </React.Fragment>, document.getElementById('root'));  // shortcut for react fragement <> </>
